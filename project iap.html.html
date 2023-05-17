@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="project iap.css">
+	<link rel="stylesheet" type="text/css" href="MaterialDesign-Webfont-master/css/materialdesignicons.css">
+	<!--<link rel="stylesheet" type="ttf" href="">-->
+	<title>Trendy Thrift Shop</title>
+</head>
+<body>
+	<div class="header">
+	<div class="container">
+		<div class="navbar">
+		<div class="logo">
+			<img src="logo.png" width="100px" alt="logo">
+		</div>
+		<nav>
+			<ul id="menu-items">
+				<li><a href="account.html"><span class="mdi mdi-account"></span> ACCOUNT</a></li>
+				<li><a href="project iap.html"><span class="mdi mdi-home"></span> HOME</a></li>
+				<li><a href="products.html"><span class="mdi mdi-shopping"></span> PRODUCTS</a></li>
+				<li><a href="singleproductpage.html"><span class="mdi mdi-account"></span>ABOUT</a></li>
+				<li><a href="cart.html"><span class="mdi mdi-account"></span>CART</a></li>
+			</ul>
+		</nav>
+		<a href="" class="menu-icon" onclick="menutoggle()"><span class="mdi mdi-menu"></span></a>
+
+	</div>
+	<div class="row">
+		<div class="col-2">
+			<h1>Trendy new fashion!!!</h1>
+			<p>Cop yours today!!</p>
+			<a href="" class="btn">Explore now &#8594;</a>
+
+		</div>
+	</div>
+	</div>
+</div>
+
+<!--Featured Categories-->
+    <h2>Categories available in stock:</h2>
+	<div class="categories">
+		<div class="small-container">
+			<div class="row">
+			<div class="col-3">
+				<img src="Retro4s.jpeg" alt="Kicks">
+			</div>
+		  	<div class="col-3">
+				<img src="cargo-pant.jpeg" alt="Streetwear">
+			</div>
+			<div class="col-3">
+				<img src="Tee-White.jpeg" alt="Great Tees">
+			</div>
+		</div>
+		</div>
+	</div>
+
+
+		
+	<!------offer------->
+	<div class="offer">
+		<div class="small-container">
+			<div class="row">
+				<div class="col-2">
+					<h2>Special Offer!!!</h2>
+					<img src="smartband.jpg" alt="image" class="offer-img">
+				</div>
+				<div class="col-2">
+					<p>Exclusively available</p>
+					<h1>Smart Band</h1>
+					<small>The Mi Smart Band 4 features a 39.9% larger AMOLED color display with adjustable brightness so everything
+						is clear as can be.
+					</small>
+					<p>20% off on every 2 puchases</p>
+					<p><a href="" class="btn">Buy Now <span class="mdi mdi-arrow-right-thin"></span></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!--Brands-->
+	<div class="brands">
+		<div class="small-container">
+			<div class="row">
+				<div class="col-5">
+					<img src="essentials.png"width="105px" alt="ESSENTIALS">
+				</div>
+				<div class="col-5">
+					<img src="champion.png" width="105px" alt="CHAMPION">
+				</div>
+				<div class="col-5">
+					<img src="drews.jpg" width="105px alt="DREWS">
+				</div>
+				<div class="col-5">
+					<img src="palmangels.png"width="105px  alt="PALM ANGELS">
+				</div>
+				<div class="col-5">
+					<img src="nike.png" width="105px alt=" NIKE">
+				</div>
+			</div>
+		</div>
+	</div>
+
+   <!--Footer-->
+   <div class="footer">
+	<div class="small-container">
+		<div class="row">
+			<div class="footer-col-1">
+				<h3>Download Our App</h3>
+				<p>For ios and android.</p>
+				<div class="app">
+					<img src="logo.png" alt="app logo">
+				</div>
+			</div>
+			<div class="footer-col-2">
+				<p>We offer the best services in the city. Delivery charges are free within Nairobi</p>
+			</div>
+			<div class="footer-col-3">
+				<h3>Useful links</h3>
+				<ul>
+					<li>Coupons</li>
+					<li>Blog Post</li>
+					<li>Return Policy</li>
+					<li>Join Affliate</li>
+				</ul>
+			</div>
+			
+			<div class="footer-col-4">
+				<h3 class="h3-follow-us">Follow Us</h3>
+				<nav>
+					<ul>
+					<li><a href=""><span class="mdi mdi-instagram"></span> Instagram</a></li>
+					<li><a href=""><span class="mdi mdi-twitter"></span> Twitter</a></li>
+					<li><a href=""><span class="mdi mdi-facebook"> Facebook</span></a></li>
+					<li><a href=""><span class="mdi mdi-discord"></span> Discord</a></li>
+					<li><a href=""><span class="mdi mdi-youtube"></span> Youtube</a></li>
+				</ul>
+				</nav>
+			</div>
+		</div>
+		<hr>
+		<p class="copyright">Copyright 2022 - ssfwewervvs</p>
+	</div>
+</div>
+
+<!--Js for toggle form-->
+<script>
+	var LoginForm = document.getElementById("LoginForm");
+	var RegForm = document.getElementById("RegForm");
+	var Indicator = document.getElementById("Indicator");
+
+	function register() {
+		RegForm.style.transform = "translateX(0px)";
+		LoginForm.style.transform = "translateX(0px)";
+		Indicator.style.transform = "translateX(100px)";
+	}
+
+	function login() {
+		RegForm.style.transform = "translateX(300px)";
+		LoginForm.style.transform = "translateX(300px)";
+		Indicator.style.transform = "translateX(0px)";
+	}
+</script>
+
+
+	<!--<script type="text/javascript">
+		var menu_items = document.getElementById("menu-items");
+		menu_items.style.maxHeight = "0px";
+		function menutoggle(){
+			if(menu_items.style.maxHeight == "0px")
+				{
+					menu_items.style.maxHeight = "200px";
+				}
+			else
+				{
+					menu_items.style.maxHeight == "0px";
+				}
+		}
+	</script>-->
+</body>
+</html>
